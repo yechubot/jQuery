@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "jquery-3.5.1.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+          var c = ['red', 'green', 'blue'];
+          //  $('h1').css('color', function(index) {
+          //    return c[index];
+          //  });
+          $('h1').click(function(){ 
+            $('h1').css('color', function(index){
+              return c[index];
+            });
+          
+      })
+      })
+    </script>
+</head>
+<body>
+
+  <h1>0000</h1>
+  <h1>11111</h1>
+  <h1>2222</h1>
+</body>
+</html>

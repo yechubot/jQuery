@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "jquery-3.5.1.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+          // $('img').attr('width',function(index) {
+          //   return (index+1)*100;
+          // });
+          // $('img').click(function(){
+          //   alert($(this).attr('src'));
+          // })
+
+          //img width = 200, height 100, 200, 300 
+         // -> what i wrote
+          // $('img').attr('width',200).add().attr('height', function(index){
+          //   return (index+1)*100;
+          // })
+          // //answer 
+           $('img').attr({
+            width:200,
+            height: function(index) {
+             return (index+1)*100;
+           }
+          })
+        })
+    </script>
+</head>
+<body>
+
+    <img src="../images/Koala.jpg" alt="Koala">
+    <img src="../images/Penguins.jpg" alt="Penguins">
+    <img src="../images/Lighthouse.jpg" alt="Lighthouse">
+
+</body>
+</html>
